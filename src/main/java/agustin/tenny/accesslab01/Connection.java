@@ -12,6 +12,11 @@ public class Connection {
         ipAddress = currentIpAddress;
     }
 
+
+    public static Connection returnConnection(int a, String b) {
+        return new Connection(a, b); //method call for Constructor takes new instead of .
+    }
+
     public int getPortNumber() {
 
         return portNumber;
