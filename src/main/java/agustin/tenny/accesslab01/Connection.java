@@ -8,12 +8,12 @@ public class Connection {
     private String ipAddress;
 
     private Connection(int currentPortNumber, String currentIpAddress) {
-        portNumber = currentPortNumber;
-        ipAddress = currentIpAddress;
+        this.portNumber = currentPortNumber;
+        this.ipAddress = currentIpAddress;
     }
 
 
-    public static Connection returnConnection(int a, String b) {
+    public static Connection storeConnection(int a, String b) {
         return new Connection(a, b); //method call for Constructor takes new instead of .
     }
 
